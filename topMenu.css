@@ -1,0 +1,78 @@
+.center {
+    display: block;
+    margin: auto;
+}
+
+.navbar {
+    top: 0;
+    position: sticky;
+    min-height: 50px;
+}
+
+.navbar a {
+    float: left;
+    padding: 13px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.navbar a.active {
+    background-color:rgb(226, 219, 202);
+}
+
+.navbar a:hover {
+    background-color:#FFEF9F;
+}
+
+.navbar a.right {
+    float: right;
+}
+
+.navbar a.right:hover {
+    background-color: #FFFCEB;
+}
+
+.fa-comments:hover {
+    background-color:#FFEF9F; /* set icon bg to be same as hover bg */
+}
+
+.dropdown {
+    float: right;
+}
+
+.dropdown .dropbtn {
+    border: none;
+    padding: 13px;
+    font-size: 18px;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    display: block;
+    padding: 10px;
+    min-width: 110px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content { /* only show content when hover */
+    display: block; /* to display content vertically */
+}
+
+@media screen and (max-width: 800px) {
+    .navbar a {
+        float: none; /* impt */
+        display: block; /* impt */
+    }
+}

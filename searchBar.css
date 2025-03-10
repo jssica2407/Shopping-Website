@@ -1,0 +1,26 @@
+.search-container {
+    float: right;
+}
+
+.navbar input[type=text] {
+    border: none;
+    padding: 13px;
+    background-color:white;
+    font-size: 18px;
+}
+
+.search-container button {
+    float: right;
+    border: none;
+    padding: 13px;
+    background: inherit;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .search-container {
+        float: none;
+        display: inline-block;
+    }
+}

@@ -1,0 +1,53 @@
+* {
+  font-family: 'Microsoft Yahei', 'Calibri';
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color:rgb(226, 219, 202);
+}
+
+header {
+  background-color: #d3c8b9;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+.order-details,
+.shipping-info {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+#ordered-items {
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #d3c8b9;
+}

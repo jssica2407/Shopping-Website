@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            /* Header/logo Title */
+            .header {
+                text-align: center;
+            }
+
+            /* Increase the font size of the heading */
+            h1 {
+                font-size: 30px;
+            }
+
+            /* Column container */
+            .row {  
+                display: -ms-flexbox; /* IE10 */
+                display: flex;
+                -ms-flex-wrap: wrap; /* IE10 */
+                flex-wrap: wrap;
+            }
+
+            /* Create two unequal columns that sits next to each other */
+            /* Sidebar/left column */
+            .side {
+                -ms-flex: 30%; /* IE10 */
+                flex: 30%;
+                background-color: #feea87;
+                padding: 20px;
+            }
+
+            /* Main column */
+            .main {   
+                -ms-flex: 70%; /* IE10 */
+                flex: 70%;
+                background-color: #fdf6c0;
+                padding: 20px;
+            }
+
+            /* Fake image, just for this example */
+            .fakeimg {
+                background-color: #aaa;
+                background-position: center;
+                width: 100%;
+                padding: 20px;
+            }
+
+            .fakeimg1 {
+                background-image: url('img/aboutus/japan.jpg'); 
+                background-size: cover; 
+                background-position: center; 
+                height: 900px; 
+                width: 100%;
+            }
+
+            .fakeimg2 {
+                background-image: url('img/aboutus/french.jpg'); 
+                background-size: cover; 
+                background-position: center; 
+                height: 900px; 
+                width: 100%;
+            }
+
+            .fakeimg3 {
+                background-image: url('img/aboutus/minimalist.jpg'); 
+                background-size: cover; 
+                background-position: center; 
+                height: 900px; 
+                width: 100%;
+            }
+
+            .fakeimgquality {
+                background-image: url('img/aboutus/qualitycheck.jpg'); 
+                background-size: cover; 
+                background-position: center; 
+                height: 500px; 
+                width: 100%;
+            }
+
+            .fakeimgside {
+                background-image: url('img/aboutus/wrongsize.gif'); 
+                background-size: cover; 
+                background-position: center; 
+                height: 800px; 
+                width: 100%;
+            }
+
+            .fakeimgmain {
+                background-image: url('img/aboutus/clothes.jpeg'); 
+                background-size: cover; 
+                background-position: center; 
+                height: 800px; 
+                width: 100%;
+            }
+
+            /* Footer */
+            .footer {
+                padding: 20px;
+                text-align: center;
+                background: #fffceb;
+                color: rgb(184, 145, 55);
+            }
+
+
+            /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 700px) {
+                .row {   
+                    flex-direction: column;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>關於我們</h1>
+            <p>專為台灣女性設計的服裝尺碼換算指南 | 整合店家 直接購買 | 為流行服飾店家提供更大客群的機會</p>
+        </div>
+          
+        <div class="row">
+            <div class="side">
+                <h2 style="background-color:#feea87;">EasyWear品牌宗旨</h2>
+                <div class="fakeimgside" style="height:500px;"></div>
+                <p style="background-color:#feea87;">現今的服飾購物平台種類眾多，但不同商店的尺碼標準各異，常常讓許多消費者在購物時感到困擾。為了解決這個問題，EasyWear 誕生了，我們提供準確的尺碼和高品質的服飾，無論身材如何，都能找到適合自己的流行服飾。EasyWear與眾多知名品牌合作，精選每一件商品，簡潔明瞭的設計，讓您輕鬆找到屬於自己的服裝。</p>
+                <h2 style="background-color:#feea87;">EasyWear故事背景</h2>
+                <p style="background-color:#feea87;">五位大學生，結合專業知識與現今顧客的痛點，創立了 EasyWear。我們的目標是為消費者提供一個無需擔心衣物尺碼的購物平台，解決購物過程中的各種問題。EasyWear的創始團隊來自不同的專業背景，包括資訊管理、財務金融，從不同角度切入市場，讓時尚與尺寸不再相互打攪。</p>
+                <div class="fakeimg1" style="height: 100px;"></div>
+                <h4 style="background-color:#feea87;">日式風格穿搭</h4>
+                <div class="fakeimg2" style="height:100px;"></div>
+                <h4 style="background-color:#feea87;">法式優雅風格穿搭</h4>
+                <div class="fakeimg3" style="height:100px;"></div>
+                <h4 style="background-color:#feea87;">極簡風格穿搭</h4>
+            </div>
+            
+            <div class="main">
+                <h1 style="background-color:#fdf6c0;">EasyWear</h1>
+                <p style="background-color:#fdf6c0;">Any Size, Any Wear.<br>簡單時尚，隨心所欲</p>
+                <div class="fakeimgmain" style="height: 500px;">Image</div>
+                <p style="background-color:#fdf6c0;">“尺碼不再是煩惱 - Easy Wear, Easy Size.</p>
+                <p style="background-color:#fdf6c0;">歡迎來到EasyWear！EasyWear提供詳細的尺碼換算指南，幫助每一位女孩選擇最合身的服飾，尺碼的選擇多樣，讓每一位女孩都能找到心儀的衣物。我們還有貼心的客戶服務團隊，隨時準備解答您的疑問，提供專業的購物建議，讓您的購物體驗更加愉快，EasyWear竭誠為您服務。EasyWear 不僅僅是一個購物平台，更是一個時尚社區，讓每個女孩都成為最時尚的自己。”</p>  
+                <h2 style="background-color:#fdf6c0;">EasyWear品質保證</h2>
+                <div class="fakeimgquality" style="height:500px;"></div>
+                <p style="background-color:#fdf6c0;">選擇 EasyWear，就是選擇方便、品質和風格。立即探索 EasyWear，體驗前所未有的服飾購物新樂趣！</p>
+            </div>
+        </div>
+          
+        <div class="footer">
+            <h2>祝您購物愉快！</h2>
+        </div>
+    </body>
+</html>

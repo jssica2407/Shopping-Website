@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="ServiceAndFeedback.css">
+    </head>
+
+    <body>
+        <p style="font-size:25px;padding-left: 200px;text-align: left;"><b>這邊是意見回饋專區 您可以在這邊提供任何你覺得可以改進的地方</b></p>
+        <form action = "result2.php" method="post">
+            <p>選擇一個意見回饋的主題方向<select name="topic" id="topic">
+                <option value="1">商品建議</option>
+                <option value="2">網站建議</option>
+                <option value="3">期望的合作</option>
+                <option value="4">讚美</option>
+                <option value="5">抱怨</option>
+            </select></p>
+            <p>有什麼樣的意見想回饋給我們呢，不管是什麼樣的內容，都是我們前進的動力:<br>
+            <textarea id="content" name="content" rows="6" cols="100" required></textarea></p>
+            <p><input type="submit" value="確認"></p>
+        </form>
+    </body>
+</html>

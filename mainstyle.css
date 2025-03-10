@@ -1,0 +1,28 @@
+* {
+    color:black;
+    background-color:#FFFCEB;
+    font-family: 'Microsoft Yahei', 'Calibri';
+}
+
+.content {
+    padding: 0px 10px;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid;
+    padding: 10px;
+}
+
+td.a {
+    background-color:rgb(226, 219, 202, 0.5);
+}
+
+td.b {
+    background-color:rgb(226, 219, 202, 0.3);
+}

@@ -1,0 +1,78 @@
+footer {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    margin-right: 20px;
+    width: calc(20% - 50px); /* 20% 寬度，減去間隔 */
+    text-align: center;
+}
+
+main {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* 可以調整靠左或靠右排列 */
+    padding: 20px;
+    text-align: center;
+}
+
+.product {
+    /* width: calc(20% - 50px);  */
+    /* width: 25%; */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.product a{
+    color: black;
+    text-decoration: none;
+}
+
+.product p {
+    color: rgb(69, 56, 36);
+}
+
+.product h4 {
+    color: black;
+}
+
+.product {
+    line-height: 1;
+}
+
+/* body main .product-list .product img {
+    width: 240px;
+    height: 245px;
+} */
+
+footer {
+    background-color: #DDD;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}

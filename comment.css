@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    padding: 0px 10px;
+}
+
+.heading {
+    font-size: 25px;
+    margin-right: 25px;
+}
+
+.checked {
+    color: orange;
+}
+
+/* Three column layout */ 
+
+.side {
+    float: left;
+    width: 15%;
+    margin-top: 10px;
+}
+  
+.middle {
+    float: left;
+    width: 70%;
+    margin-top: 10px;
+}
+
+.sideright{
+    float: left;
+    width: 15%;
+    margin-top: 10px;
+}
+
+.rating {
+    display: flex;
+    direction: rtl; /*排列從*/
+    justify-content: left;
+}
+  
+.rating label {
+    cursor: pointer;
+    transition: 0.3s ease; /* Add hover effect */
+}
+  
+.rating label:hover {
+    color: orange; /* Change star color on hover */
+}
+  
+.rating input {
+    display: none; /* Hide radio buttons */
+}
+  
+/* Star icon styling */
+.rating label:before {
+    content: "\2605"; /* Star symbol */
+    font-size: 2rem;
+    color: lightgray;
+}
+  
+.rating input:checked ~ label:before {
+    color: gold; /* Change star color on select */
+} 
+
+.rating input:checked + label:before {
+    color: gold; /* Change star color on select */
+}
+
+.container {
+    text-align: left;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+/* The bar container */
+.bar-container {
+    width: 100%;
+    background-color: #fffceb;
+    text-align: center;
+    color: white;
+}
+  
+/* Individual bars */
+.bar-5 {width: 60%; height: 18px; background-color: #04AA6D;}
+.bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+.bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+.bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+  
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+    .side, .middle {
+        width: 100%;
+    }
+    /* Hide the right column on small screens */
+    .right {
+        display: none;
+    }
+}
+  
+.comment-section {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+  
+.comment-section h2 {
+    margin-bottom: 20px;
+}
+  
+.comment-form {
+    display: flex;
+    margin-bottom: 20px;
+}
+  
+.comment-form textarea {
+    flex-grow: 1;
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+.comment-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.comment-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.comment-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+  
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+  
+.user-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+  
+.name-date {
+    display: flex;
+    flex-direction: column;
+}
+  
+.name-date .name {
+    font-weight: bold;
+}
+  
+.name-date .date {
+    color: #6c757d;
+    font-size: 12px;
+    margin-top: 2px;
+}

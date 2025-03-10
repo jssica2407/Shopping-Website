@@ -1,0 +1,43 @@
+body {
+    text-align: center;/*對body做置中 讓div.a中的inline block能置中*/
+}
+
+hr.solid {
+    border-top: 14px solid rgb(226, 219, 202)
+}
+
+h1 {
+    text-align: center;
+    padding:10px;
+    font-size: 25px;
+}  
+
+img.left {
+    padding: 20px;
+    float: left;
+    width: 40%;
+    height: auto;    
+}
+
+img.right {
+    padding: 20px;
+    float: right;
+    width: 40%;
+    height: auto;
+}
+
+.card {
+    border: 6px solid #ddd;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 16px;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+    text-align: left;
+    width: 60%;
+    display: inline-block;/*讓div中的內容為獨立的物件 不受其他內容干擾*/
+}
+
+p {
+    font-size:20px;
+    text-align: center;
+}
